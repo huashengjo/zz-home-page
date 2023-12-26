@@ -2,31 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/zzicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zihan Zhou</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="hero">
-        
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="images/zzhome90.mp4" type="video/mp4">
-        </video>
-
-        <nav>
-            <image src="images/zztextlogo.png" class="logo">
-            <ul class="navwork">
-                <li><a href="#">Making</a></li>
-                <li>/</li>
-                <li><a href="#">Writing</a></li>
-            </ul>
-            <ul class="navcv">
-                <li><a href="#">CV</a></li>
-                <li>/</li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <p class="copyright">© Zihan Zhou 2024</p>
+        <header>
+            <a href="index.html">
+                <image src="images/zztextlogoblack.png" class="logo">
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul id="navall" class="navall">
+                    <li><a href="making.html">Making</a></li>
+                    <li>/</li>
+                    <li><a href="writing.html">Writing</a></li>
+                    <li>/</li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li>/</li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
+        <footer>
+            <p class="copyright">© Zihan Zhou 2024</p>
+        </footer>
 
     </div>
 
