@@ -4,28 +4,38 @@
     box-sizing: border-box;
 }
 
-.hero{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/three144×900.png);
-    background-size: cover;
-    background-position: center;
+html {
+    height: 100%;
 }
 
 
 /*-------以下是电脑端页头---------*/
 
+
+
 header{
     width: 100%;
     height: 120px;
     position: fixed;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
+    background-color: white;
+    z-index: 1;
+}
+
+.headerbackground {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    height: 160px;
+    width: 100%;
 }
 
 .logo-part {
+    position: relative;
     width: 300px;
     margin-left: 10%;
 }
@@ -40,6 +50,7 @@ header{
 }
 
 nav {
+    position: relative;
     background-color: rgba(255, 255, 255, 0);
 }
 
@@ -75,22 +86,64 @@ nav a:hover {
 
 /*-------电脑端页头结束---------*/
 
+/*-------以下是电脑端内容部分---------*/
 
+
+
+.left-part {
+    background-color: lightp;
+    position: fixed;
+    top: 210;
+    width: 25%;
+}
+
+.menu {
+    margin-left: 50px;;
+    margin-top: 0px;
+}
+
+.menu li {
+    list-style: none;
+    margin: .5em;
+}
+
+.menu li a {
+    text-decoration: none;
+    color:rgb(101, 101, 101);
+    font-size: 0.9rem;
+}
+
+.menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.right-part {
+    display: block;
+    margin-top: 210px;
+    margin-left: 20%;
+    right: 0;
+}
+
+.content {
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.content p {
+    font-size: 0.9rem;
+}
+
+
+/*-------电脑端内容部分结束---------*/
 
 /*-------以下是手机端适配---------*/
 
 
 @media screen and (max-width: 700px) {
 
-    .hero{
-        width: 100%;
-        height: 100vh;
-        background-image: url(images/ox1080×1920.png);
-        background-size: cover;
-        background-position: center;
-        align-items: center;
-        justify-content: center;
-    }
 
     /*-------右上角按钮的分割线---------*/
     
@@ -115,14 +168,13 @@ nav a:hover {
         margin: 2em;
         opacity: 0;
         transition: opacity 100ms ease-in-out;
-    }
+    }    
     .slash{
         display: none;
     }
     .nav-toggle:checked ~ nav {
         transform: scale(1, 1);
     }
-
     .nav-toggle:checked ~ nav li {
         opacity: 1;
         transition: opacity 250ms ease-in-out 250ms;
@@ -166,12 +218,13 @@ nav a:hover {
 
 /*-------页脚的分割线---------*/
 
-
+.thepage {
+    min-height: 100%;
+}
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 10px;
-    right: 0;
+    height: 40px;
+    margin-top: -40px;
 }
 
 .copyright {
@@ -179,3 +232,5 @@ footer {
     font-size: 12px;
     text-align: center;
 }
+
+
