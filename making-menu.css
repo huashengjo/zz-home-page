@@ -11,6 +11,8 @@ html {
 
 /*-------以下是电脑端页头---------*/
 
+
+
 header{
     width: 100%;
     height: 120px;
@@ -135,19 +137,6 @@ nav a:hover {
     line-height: 1.8em;
 }
 
-.content p a{
-    color: gray;
-}
-
-.page-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.link-arrow {
-    height: 10px;
-}
 
 /*-------电脑端内容部分结束---------*/
 
@@ -264,31 +253,39 @@ nav a:hover {
     }
     /*-------右上角按钮结束---------*/
 
-    /*-------内容页面适配---------*/
-
-    .menu {
-        display: none;
-    }
-    .right-part {
-        display: block;
-        margin-top: 180px;
-        margin-left: 0;
-        right: 0;
-    }
-    .content {
-        margin-left: 50px;
-        margin-right: 60px;
-        padding-bottom: 0;
-    }
-    .content p {
-        font-size: 0.8rem;
-    }
-    .content-images {
-        max-width: none;
+    /*-------手机端内容页面适配---------*/
+    .left-part {
+        position: fixed;
+        top: 210px;
         width: 100%;
     }
-
-    /*-------内容页面适配结束---------*/
+    .menu {
+        margin-left: 15%;;
+        margin-top: 0px;
+    }
+    .menu li {
+        list-style: none;
+        margin: .5em;
+    }
+    .menu li a {
+        font-size: 0.85rem;
+    }
+    .right-part {
+        display: none;
+    }
+    /*-------手机端内容页面适配结束---------*/
+    /*-------手机端页脚适配开始---------*/
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .copyright {
+        color: black;
+        font-size: 12px;
+        text-align: center;
+    }
+    /*-------手机端页脚适配结束---------*/
 }
 
 /*-------手机端适配结束---------*/
@@ -296,9 +293,8 @@ nav a:hover {
 
 /*-------页脚的分割线---------*/
 
-.thepage {
-    min-height: 100%;
-}
+
+
 footer {
     width: 100%;
     height: 40px;
